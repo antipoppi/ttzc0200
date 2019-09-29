@@ -1,5 +1,5 @@
 # ttzc0200
 
-##Tervetuloa minun ohjelmoinnin perusteet gitlab sivulle!
+## Tervetuloa
 
-
+Minun ohjelmoinnin perusteet gitlab sivulle!
