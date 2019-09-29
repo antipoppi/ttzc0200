@@ -6,7 +6,10 @@ namespace Demo03
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Demo03 - version control");
+
+            Console.WriteLine("Tatu is the Best!");
+            Console.ReadKey();
         }
     }
 }
