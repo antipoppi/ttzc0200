@@ -8,7 +8,7 @@ namespace Demo03
         {
             Console.WriteLine("Demo03 - version control");
 
-            Console.WriteLine("Tatu is the Best!");
+            Console.WriteLine("Tatu is the Dude!");
             Console.ReadKey();
         }
     }
