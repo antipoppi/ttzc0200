@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harj07_L07T01", "Harj07_L07
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harj07_L07T02", "Harj07_L07T02\Harj07_L07T02.csproj", "{3A64DA9D-8CDB-4B8E-8704-180EDE6CBA9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harj07_L07T03", "Harj07_L07T03\Harj07_L07T03.csproj", "{870321D5-DA34-4ABD-8EFC-75A33A429DDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{3A64DA9D-8CDB-4B8E-8704-180EDE6CBA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A64DA9D-8CDB-4B8E-8704-180EDE6CBA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A64DA9D-8CDB-4B8E-8704-180EDE6CBA9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{870321D5-DA34-4ABD-8EFC-75A33A429DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{870321D5-DA34-4ABD-8EFC-75A33A429DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{870321D5-DA34-4ABD-8EFC-75A33A429DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{870321D5-DA34-4ABD-8EFC-75A33A429DDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
