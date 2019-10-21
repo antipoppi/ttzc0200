@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Harj07_L07T01
+namespace Harj07_L07T01 //Ehto- ja toistorakenteet
 {
     class Program
     {
