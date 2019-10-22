@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo09", "Demo09\Demo09.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harj09_L09T01", "Harj09_L09T01\Harj09_L09T01.csproj", "{2B5DA0D4-0F8F-4184-B11B-328B3CB83B61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harj09_L09T02", "Harj09_L09T02\Harj09_L09T02.csproj", "{2A21B1C3-C70C-4392-8D26-310CA484FA08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{2B5DA0D4-0F8F-4184-B11B-328B3CB83B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B5DA0D4-0F8F-4184-B11B-328B3CB83B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B5DA0D4-0F8F-4184-B11B-328B3CB83B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A21B1C3-C70C-4392-8D26-310CA484FA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A21B1C3-C70C-4392-8D26-310CA484FA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A21B1C3-C70C-4392-8D26-310CA484FA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A21B1C3-C70C-4392-8D26-310CA484FA08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
