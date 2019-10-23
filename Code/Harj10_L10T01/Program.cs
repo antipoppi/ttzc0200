@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Harj10_L10T01
+namespace Harj10_L10T01 //Metodien viittausparametrit
 {
     class Program
     {
