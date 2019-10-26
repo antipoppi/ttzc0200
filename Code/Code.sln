@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harj12_L12T03", "Harj12_L12
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harj12_L12T04", "Harj12_L12T04\Harj12_L12T04.csproj", "{4E673A92-54F4-4387-9EC9-7C869451E314}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harj12_L12T05", "Harj12_L12T05\Harj12_L12T05.csproj", "{8708345C-A42D-42A3-8BF8-B2897A343105}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{4E673A92-54F4-4387-9EC9-7C869451E314}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E673A92-54F4-4387-9EC9-7C869451E314}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E673A92-54F4-4387-9EC9-7C869451E314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8708345C-A42D-42A3-8BF8-B2897A343105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8708345C-A42D-42A3-8BF8-B2897A343105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8708345C-A42D-42A3-8BF8-B2897A343105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8708345C-A42D-42A3-8BF8-B2897A343105}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
