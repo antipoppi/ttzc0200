@@ -22,7 +22,7 @@ namespace Harj14_L14T03
                 taulukko[i] = "tyhjä";
             }
             Console.Write("Syötä indeksinumero (0-4) mihin kohtaan taulukkoa haluat syöttää tekstin: ");
-            int kysyttyIndeksi = Int32.Parse(Console.ReadLine()); // muuttaa stringin integeriksi
+            int kysyttyIndeksi = int.Parse(Console.ReadLine()); // muuttaa stringin integeriksi
             Console.Write("Syötä uusi teksti joka sijoitetaan antamaasi indeksinumeroon " + kysyttyIndeksi + ": ");
             string syötettyTeksti = Console.ReadLine();
             try
@@ -34,7 +34,7 @@ namespace Harj14_L14T03
                 do // looppaa pyyntöä validista indeksistä niin kauan, kuin ehdot täyttyvät.
                 {
                     Console.Write(e.Message + " Syötit kelvottoman indeksinumeron! Syötä uusi väliltä 0-4: ");
-                    kysyttyIndeksi = Int32.Parse(Console.ReadLine());
+                    kysyttyIndeksi = int.Parse(Console.ReadLine());
                 }while (kysyttyIndeksi >= taulukko.Length);
                 taulukko[kysyttyIndeksi] = syötettyTeksti;
             }
