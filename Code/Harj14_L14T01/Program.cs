@@ -20,7 +20,7 @@ namespace Harj14_L14T01
                 Console.WriteLine(käännös);
             } catch (OverflowException ex)
             {
-                Console.WriteLine("Käännettävä luku on liian suuri! " + ex);
+                Console.WriteLine("Käännettävä luku on liian suuri! " + ex.Message);
             }
         }
     }
