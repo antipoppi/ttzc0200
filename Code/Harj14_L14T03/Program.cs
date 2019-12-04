@@ -22,21 +22,22 @@ namespace Harj14_L14T03
                 taulukko[i] = "tyhjä";
             }
             Console.Write("Syötä indeksinumero (0-4) mihin kohtaan taulukkoa haluat syöttää tekstin: ");
-            int kysyttyIndeksi = int.Parse(Console.ReadLine()); // muuttaa stringin integeriksi
-            Console.Write("Syötä uusi teksti joka sijoitetaan antamaasi indeksinumeroon " + kysyttyIndeksi + ": ");
+            string syöteIndeksi = Console.ReadLine(); // muuttaa stringin integeriksi
+            int.TryParse(syöteIndeksi, out int indeksi);
+            Console.Write("Syötä uusi teksti joka sijoitetaan antamaasi indeksinumeroon " + indeksi + ": ");
             string syötettyTeksti = Console.ReadLine();
             try
             {
-                taulukko[kysyttyIndeksi] = syötettyTeksti;
+                taulukko[indeksi] = syötettyTeksti;
             }
             catch (IndexOutOfRangeException e)
             {
                 do // looppaa pyyntöä validista indeksistä niin kauan, kuin ehdot täyttyvät.
                 {
                     Console.Write(e.Message + " Syötit kelvottoman indeksinumeron! Syötä uusi väliltä 0-4: ");
-                    kysyttyIndeksi = int.Parse(Console.ReadLine());
-                }while (kysyttyIndeksi >= taulukko.Length);
-                taulukko[kysyttyIndeksi] = syötettyTeksti;
+                    indeksi = int.Parse(Console.ReadLine());
+                }while (indeksi >= taulukko.Length);
+                taulukko[indeksi] = syötettyTeksti;
             }
             foreach (string value in taulukko) // tulostaa taulukon
             {
