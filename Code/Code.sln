@@ -89,6 +89,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo14", "Demo14\Demo14.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harj14_L14T01", "Harj14_L14T01\Harj14_L14T01.csproj", "{6011A123-A130-4C88-8DE6-15DC848EF2C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harj14_L14T02", "Harj14_L14T02\Harj14_L14T02.csproj", "{165147E0-1710-4B4A-927F-7DC5EB1990C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harj14_L14T03", "Harj14_L14T03\Harj14_L14T03.csproj", "{F78DDE5A-5A10-47A5-BD0D-E2CF63273DD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +271,14 @@ Global
 		{6011A123-A130-4C88-8DE6-15DC848EF2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6011A123-A130-4C88-8DE6-15DC848EF2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6011A123-A130-4C88-8DE6-15DC848EF2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{165147E0-1710-4B4A-927F-7DC5EB1990C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{165147E0-1710-4B4A-927F-7DC5EB1990C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{165147E0-1710-4B4A-927F-7DC5EB1990C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{165147E0-1710-4B4A-927F-7DC5EB1990C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F78DDE5A-5A10-47A5-BD0D-E2CF63273DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F78DDE5A-5A10-47A5-BD0D-E2CF63273DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F78DDE5A-5A10-47A5-BD0D-E2CF63273DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F78DDE5A-5A10-47A5-BD0D-E2CF63273DD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
