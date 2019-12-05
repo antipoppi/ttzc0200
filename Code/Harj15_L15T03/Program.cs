@@ -20,13 +20,14 @@ namespace Harj15_L15T03 // tiedostot
         static void Main(string[] args) // olen pyrkinyt käsin laittamaan poikkeukset, vaikka sen voi laittaa pelkästään Exception -määreellä yleisesti poimimaan kaikki.
         {
             try
-            {
-                if (File.Exists("nimet.txt")) // katsotaan löytyykö nimet.txt
+            { /* HOX! Muuta tarvittaessa aseman kirjain/polku, tiedosto on kyllä kansiossa!
+               */
+                if (File.Exists("H:\\git\\ttzc0200\\code\\harj15_L15T03\\nimet.txt")) // katsotaan löytyykö nimet.txt.
                 {
                     Console.WriteLine("Tiedosto nimet.txt löytyy!");
                     try
                     {
-                        string[] nimet = File.ReadAllLines("nimet.txt"); // luodaan nimet-taulukko nimet.txt:stä
+                        string[] nimet = File.ReadAllLines("H:\\git\\ttzc0200\\code\\harj15_L15T03\\nimet.txt"); // luodaan nimet-taulukko nimet.txt:stä
                         Console.WriteLine("\nTiedostosta nimet.txt löytyy " + nimet.Length + " nimeä.\n");
 
                         string[] laskettuLista = new string[nimet.Length]; // luodaan laskettuLista-taulukko, johon tallennetaan tiedot montako kertaa nimi esiintyy
