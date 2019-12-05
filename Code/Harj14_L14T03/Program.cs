@@ -35,8 +35,9 @@ namespace Harj14_L14T03
                 do // looppaa pyyntöä validista indeksistä niin kauan, kuin ehdot täyttyvät.
                 {
                     Console.Write(e.Message + " Syötit kelvottoman indeksinumeron! Syötä uusi väliltä 0-4: ");
-                    indeksi = int.Parse(Console.ReadLine());
-                }while (indeksi >= taulukko.Length);
+                    syöteIndeksi = Console.ReadLine();
+                    int.TryParse(syöteIndeksi, out indeksi); 
+                } while (indeksi >= taulukko.Length);
                 taulukko[indeksi] = syötettyTeksti;
             }
             foreach (string value in taulukko) // tulostaa taulukon
