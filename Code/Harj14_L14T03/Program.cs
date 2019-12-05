@@ -22,8 +22,8 @@ namespace Harj14_L14T03
                 taulukko[i] = "tyhjä";
             }
             Console.Write("Syötä indeksinumero (0-4) mihin kohtaan taulukkoa haluat syöttää tekstin: ");
-            string syöteIndeksi = Console.ReadLine(); // muuttaa stringin integeriksi
-            int.TryParse(syöteIndeksi, out int indeksi);
+            string syöteIndeksi = Console.ReadLine(); // tallennetaan syötetty teksti string-muuttujaan
+            int.TryParse(syöteIndeksi, out int indeksi); // TryParse nappaa virheen muunnoksessa numeroksi, jos esim käyttäjä on syöttänyt tyhjää.
             Console.Write("Syötä uusi teksti joka sijoitetaan antamaasi indeksinumeroon " + indeksi + ": ");
             string syötettyTeksti = Console.ReadLine();
             try
