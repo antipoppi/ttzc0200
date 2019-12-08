@@ -62,6 +62,10 @@ namespace Harj15_L15T04
             {
                 Console.WriteLine(ex.Message);
             }
+            catch (OutOfMemoryException ex)
+            {
+                Console.WriteLine("Ei tarpeeksi muistia: " + ex.Message);
+            }
             finally
             {
                 if (kokonaisluvut != null)
