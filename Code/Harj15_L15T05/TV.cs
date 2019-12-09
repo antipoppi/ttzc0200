@@ -1,7 +1,4 @@
-﻿using System;
-
-[Serializable]
-struct TV
+﻿struct TV
 {
     public TV (string ohjelmaNimi, string kanava, string aloitus, string lopetus, string info)
     {

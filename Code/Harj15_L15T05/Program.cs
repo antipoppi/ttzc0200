@@ -33,9 +33,9 @@ namespace Harj15_L15T05 // Tiedostot
                 ohjelmat.Add(new TV("Arto Nyberg", "TV1", "16:00", "16:45", "Suorassa lähetyksessä haastateltavina taiteilija Arja Saijonmaa."));
                 ohjelmat.Add(new TV("Emmerdale", "MTV3", "10:00", "10:30", "Suru puserossa, osa 1/2."));
                 ohjelmat.Add(new TV("Huutokaupan metsästäjät", "FOX", "16:00", "16:30", "Kausi 11. Jakso 14. Tour de Van Nuys. Ivy etsiskelee polkupyöriä. Mary saa itselleen niin mageen varaston ja Dave joutuu venytyspenkkiin."));
-                TallennaOhjelmat(ohjelmat, "TV-Ohjelmat.txt");
+                TallennaOhjelmat(ohjelmat, "TV-Ohjelmat.txt"); // metodilla tallennetaan ohjelmat tiedostoon
                 Console.WriteLine("Tallennettiin " + ohjelmat.Count + " tv-ohjelman tiedot tekstitiedostoon.");
-                LueOhjelmat(ohjelmat, "TV-Ohjelmat.txt");
+                LueOhjelmat(ohjelmat, "TV-Ohjelmat.txt"); // metodilla tulostetaan tiedot tiedostosta konsoliin
             }
             catch (IOException ex)
             {
