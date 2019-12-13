@@ -7,6 +7,7 @@
 
 using System;
 using System.IO;
+using System.Text;
 
 namespace Harj15_L15T01 // tiedostot
 {
@@ -60,7 +61,14 @@ namespace Harj15_L15T01 // tiedostot
             {
                 if (tiedosto != null)
                 {
-                    tiedosto.Close();
+                    try
+                    {
+                        tiedosto.Close();
+                    }
+                    catch (EncoderFallbackException ex)
+                    {
+                        Console.WriteLine("Tiedostoa ei voi sulkea: " + ex.Message);
+                    }
                 }
             }
         }

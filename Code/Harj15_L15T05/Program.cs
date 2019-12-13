@@ -17,6 +17,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
+using System.Security;
 
 namespace Harj15_L15T05 // Tiedostot
 {
@@ -35,7 +37,7 @@ namespace Harj15_L15T05 // Tiedostot
                 ohjelmat.Add(new TV("Huutokaupan metsästäjät", "FOX", "16:00", "16:30", "Kausi 11. Jakso 14. Tour de Van Nuys. Ivy etsiskelee polkupyöriä. Mary saa itselleen niin mageen varaston ja Dave joutuu venytyspenkkiin."));
                 TallennaOhjelmat(ohjelmat, "TV-Ohjelmat.txt"); // metodilla tallennetaan ohjelmat tiedostoon
                 Console.WriteLine("Tallennettiin " + ohjelmat.Count + " tv-ohjelman tiedot tekstitiedostoon.");
-                LueOhjelmat(ohjelmat, "TV-Ohjelmat.txt"); // metodilla tulostetaan tiedot tiedostosta konsoliin
+                LueOhjelmat("TV-Ohjelmat.txt"); // metodilla tulostetaan tiedot tiedostosta konsoliin
             }
             catch (IOException ex)
             {
@@ -62,20 +64,27 @@ namespace Harj15_L15T05 // Tiedostot
             {
                 if (tvTiedot != null)
                 {
-                    tvTiedot.Close();
+                    try
+                    {
+                        tvTiedot.Close();
+                    }
+                    catch (EncoderFallbackException ex)
+                    {
+                        Console.WriteLine("Tiedostoa ei saa suljettua: " + ex.Message);
+                    }
                 }
             }
         }
-        public static void LueOhjelmat(List<TV> ohjelmat, string tiedostonimi)
+        public static void LueOhjelmat(string tiedostonimi)
         {
             try
             {
                 string sisältö = File.ReadAllText(tiedostonimi); // tallennetaan tekstitiedoston sisältö stringiin
                 Console.WriteLine("\n" + tiedostonimi + " -tiedoston sisältö on seuraava" + ":\n" + sisältö);
             }
-            catch (FileNotFoundException ex)
+            catch (Exception ex)
             {
-                Console.WriteLine("Tiedostoa ei löydy: " + ex.Message);
+                Console.WriteLine("Tiedostoa ei voi lukea: " + ex.Message);
             }
         }
     }

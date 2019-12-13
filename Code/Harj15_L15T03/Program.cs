@@ -12,6 +12,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Security;
 
 namespace Harj15_L15T03 // tiedostot
 {
@@ -54,9 +55,13 @@ namespace Harj15_L15T03 // tiedostot
                                 Console.WriteLine(i);
                             }
                         }
-                        catch (InvalidOperationException)
+                        catch (ArgumentNullException ex)
                         {
-                            Console.WriteLine("Taulukon järjestäminen aakkosten mukaan ei onnistu: ");
+                            Console.WriteLine("Taulukon järjestäminen aakkosten mukaan ei onnistu: " + ex.Message);
+                        }
+                        catch (InvalidOperationException ex)
+                        {
+                            Console.WriteLine("Taulukon järjestäminen aakkosten mukaan ei onnistu: " + ex.Message);
                         }
                     }
                     catch (FileLoadException ex)
@@ -67,9 +72,9 @@ namespace Harj15_L15T03 // tiedostot
                     {
                         Console.WriteLine("Indeksinumero ei ole validi: " + ex.Message);
                     }
-                    catch (System.Security.SecurityException)
+                    catch (SecurityException ex)
                     {
-                        Console.WriteLine("Turvallisuus-virhe: ");
+                        Console.WriteLine("Turvallisuus-virhe: " + ex.Message);
                     }
                 }
                 else

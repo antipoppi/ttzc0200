@@ -8,10 +8,11 @@
 
 using System;
 using System.IO;
+using System.Text;
 
 namespace Harj15_L15T04
 {
-    class Program
+    class Program // tiedostot
     {
         static void Main(string[] args)
         {
@@ -36,6 +37,13 @@ namespace Harj15_L15T04
                         {
                             liukuluvut.WriteLine(inputMerkkijono);
                         }
+                    }
+                    catch (ArgumentNullException ex)
+                    {
+                        Console.WriteLine("Syötettä ei saanut muutettua luvuksi: " + ex.Message);
+                        kokonaisluvut.Close();
+                        liukuluvut.Close();
+                        break;
                     }
                     catch (FormatException ex)
                     {
@@ -66,15 +74,26 @@ namespace Harj15_L15T04
             {
                 Console.WriteLine("Ei tarpeeksi muistia: " + ex.Message);
             }
+            catch (EncoderFallbackException ex)
+            {
+                Console.WriteLine("Tiedostoa ei saanut suljettua: " + ex.Message);
+            }
             finally
             {
-                if (kokonaisluvut != null)
+                try
                 {
-                    kokonaisluvut.Close();
+                    if (kokonaisluvut != null)
+                    {
+                        kokonaisluvut.Close();
+                    }
+                    else if (liukuluvut != null)
+                    {
+                        liukuluvut.Close();
+                    }
                 }
-                else if (liukuluvut != null)
+                catch (EncoderFallbackException ex)
                 {
-                    liukuluvut.Close();
+                    Console.WriteLine("Tiedostoa ei saanut suljettua: " + ex.Message);
                 }
             }
         }
